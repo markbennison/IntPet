@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4719697340578916628}
   - component: {fileID: 2996392715678626154}
   - component: {fileID: 7357653953804275573}
+  - component: {fileID: 7459197627484428903}
   m_Layer: 0
   m_Name: Archie
   m_TagString: Untagged
@@ -208,6 +209,18 @@ MonoBehaviour:
   m_Elasticity: 0.15
   m_EnableElasticBreakLimit: 1
   m_ElasticBreakLimit: 0.5
+--- !u!114 &7459197627484428903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613292779795284151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12bb90acd493a04c82b88759a943552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5098610303329052743
 GameObject:
   m_ObjectHideFlags: 0

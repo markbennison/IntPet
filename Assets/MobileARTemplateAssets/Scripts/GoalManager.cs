@@ -291,14 +291,14 @@ public class GoalManager : MonoBehaviour
         int startingStep = m_AllGoalsFinished ? 1 : 0;
 
         var tapSurfaceGoal = new Goal(OnboardingGoals.TapSurface);
-        var translateHintsGoal = new Goal(OnboardingGoals.Hints);
-        var scaleHintsGoal = new Goal(OnboardingGoals.Scale);
-        var rotateHintsGoal = new Goal(OnboardingGoals.Hints);
+        //var translateHintsGoal = new Goal(OnboardingGoals.Hints);
+        //var scaleHintsGoal = new Goal(OnboardingGoals.Scale);
+        //var rotateHintsGoal = new Goal(OnboardingGoals.Hints);
 
         m_OnboardingGoals.Enqueue(tapSurfaceGoal);
-        m_OnboardingGoals.Enqueue(translateHintsGoal);
-        m_OnboardingGoals.Enqueue(scaleHintsGoal);
-        m_OnboardingGoals.Enqueue(rotateHintsGoal);
+        //m_OnboardingGoals.Enqueue(translateHintsGoal);
+        //m_OnboardingGoals.Enqueue(scaleHintsGoal);
+        //m_OnboardingGoals.Enqueue(rotateHintsGoal);
 
         m_CurrentGoal = m_OnboardingGoals.Dequeue();
         m_AllGoalsFinished = false;

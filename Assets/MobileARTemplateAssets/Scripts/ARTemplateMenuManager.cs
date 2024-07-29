@@ -220,9 +220,6 @@ public class ARTemplateMenuManager : MonoBehaviour
     Vector2 m_ObjectMenuOffset = Vector2.zero;
     readonly List<ARFeatheredPlaneMeshVisualizerCompanion> featheredPlaneMeshVisualizerCompanions = new List<ARFeatheredPlaneMeshVisualizerCompanion>();
 
-    // Custom Code - Benny
-    bool surfaceVisibilityChange = false;
-
 
     /// <summary>
     /// See <see cref="MonoBehaviour"/>.
@@ -310,15 +307,6 @@ public class ARTemplateMenuManager : MonoBehaviour
         // Custom Code - Benny
 
         SurfaceVisibilityChange();
-
-        //if(m_ObjectSpawner.transform.childCount > 0)
-        //{
-        //    HideDebugPlane();
-        //}
-        //else
-        //{
-        //    ShowDebugPlane();
-        //}
     }
 
     void SurfaceVisibilityChange()
