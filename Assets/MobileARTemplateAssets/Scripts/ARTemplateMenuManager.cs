@@ -220,6 +220,10 @@ public class ARTemplateMenuManager : MonoBehaviour
     Vector2 m_ObjectMenuOffset = Vector2.zero;
     readonly List<ARFeatheredPlaneMeshVisualizerCompanion> featheredPlaneMeshVisualizerCompanions = new List<ARFeatheredPlaneMeshVisualizerCompanion>();
 
+    // Custom Code - Benny
+    bool surfaceVisibilityChange = false;
+
+
     /// <summary>
     /// See <see cref="MonoBehaviour"/>.
     /// </summary>
@@ -301,6 +305,32 @@ public class ARTemplateMenuManager : MonoBehaviour
         if (!m_IsPointerOverUI && m_ShowOptionsModal)
         {
             m_IsPointerOverUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(-1);
+        }
+
+        // Custom Code - Benny
+
+        SurfaceVisibilityChange();
+
+        //if(m_ObjectSpawner.transform.childCount > 0)
+        //{
+        //    HideDebugPlane();
+        //}
+        //else
+        //{
+        //    ShowDebugPlane();
+        //}
+    }
+
+    void SurfaceVisibilityChange()
+    {
+        if (m_DebugPlaneSlider.value == 1 && m_ObjectSpawner.transform.childCount > 0)
+        {
+            HideDebugPlane();
+        }
+
+        if (m_DebugPlaneSlider.value == 0 && m_ObjectSpawner.transform.childCount < 1)
+        {
+            ShowDebugPlane();
         }
     }
 
